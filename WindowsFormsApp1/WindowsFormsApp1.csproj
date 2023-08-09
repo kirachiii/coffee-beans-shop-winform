@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DFD1FE72-A20E-4A77-B262-251531B52A10}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataClasses2.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses2.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form修改個人資料.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form修改個人資料.Designer.cs">
+      <DependentUpon>Form修改個人資料.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form員工資料管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form員工資料管理.Designer.cs">
+      <DependentUpon>Form員工資料管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form商品管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form商品管理.Designer.cs">
+      <DependentUpon>Form商品管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form商品資料.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form商品資料.Designer.cs">
+      <DependentUpon>Form商品資料.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form建立新帳號.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form建立新帳號.Designer.cs">
+      <DependentUpon>Form建立新帳號.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form我的訂單.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form我的訂單.Designer.cs">
+      <DependentUpon>Form我的訂單.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form會員資料.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form會員資料.Designer.cs">
+      <DependentUpon>Form會員資料.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form產品詳細資料.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form產品詳細資料.Designer.cs">
+      <DependentUpon>Form產品詳細資料.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form登入.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form登入.Designer.cs">
+      <DependentUpon>Form登入.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form訂單管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form訂單管理.Designer.cs">
+      <DependentUpon>Form訂單管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form訂單詳細資訊.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form訂單詳細資訊.Designer.cs">
+      <DependentUpon>Form訂單詳細資訊.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form訂購單.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form訂購單.Designer.cs">
+      <DependentUpon>form訂購單.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form訂購單2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form訂購單2.Designer.cs">
+      <DependentUpon>Form訂購單2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form詳細訂單管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form詳細訂單管理.Designer.cs">
+      <DependentUpon>Form詳細訂單管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form購物車.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form購物車.Designer.cs">
+      <DependentUpon>Form購物車.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobarVar.cs" />
+    <Compile Include="mydb.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mydb.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mydbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mydbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form修改個人資料.resx">
+      <DependentUpon>Form修改個人資料.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form員工資料管理.resx">
+      <DependentUpon>Form員工資料管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form商品管理.resx">
+      <DependentUpon>Form商品管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form商品資料.resx">
+      <DependentUpon>Form商品資料.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form建立新帳號.resx">
+      <DependentUpon>Form建立新帳號.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form我的訂單.resx">
+      <DependentUpon>Form我的訂單.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form會員資料.resx">
+      <DependentUpon>Form會員資料.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form產品詳細資料.resx">
+      <DependentUpon>Form產品詳細資料.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form登入.resx">
+      <DependentUpon>Form登入.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form訂單管理.resx">
+      <DependentUpon>Form訂單管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form訂單詳細資訊.resx">
+      <DependentUpon>Form訂單詳細資訊.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form訂購單.resx">
+      <DependentUpon>form訂購單.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form訂購單2.resx">
+      <DependentUpon>Form訂購單2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form詳細訂單管理.resx">
+      <DependentUpon>Form詳細訂單管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form購物車.resx">
+      <DependentUpon>Form購物車.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DataClasses2.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses2.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClasses2.dbml.layout">
+      <DependentUpon>DataClasses2.dbml</DependentUpon>
+    </None>
+    <None Include="mydb.xsc">
+      <DependentUpon>mydb.xsd</DependentUpon>
+    </None>
+    <None Include="mydb.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mydb.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mydb.xss">
+      <DependentUpon>mydb.xsd</DependentUpon>
+    </None>
+    <None Include="mydbDataSet.xsc">
+      <DependentUpon>mydbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="mydbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mydbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mydbDataSet.xss">
+      <DependentUpon>mydbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
